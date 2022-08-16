@@ -1,14 +1,10 @@
 // Arithmetic lab!
+let num1 = 0, num2 = 0, num3 = 0, num4 = 0;
 
-const num1 = 31;
-const num2 = 2;
-const num3 = 25;
-const num4 = 7;
+const multiply = (function (num1=31, num2=2) {return num1*num2;})();
 
-let multiply = num1 * num2;
+const random = (function () {return parseInt((Math.random() * 10) + 1);})();
 
-let random = parseInt(((Math.random()* 10) + 1), 10);
+const mod = (function(num3=25, num4=7) {return num3 % num4;})();
 
-let mod = num3 % num4;
-
-let max = Math.max(2, 12, 16, 20, 19);
+const max = (function() {return Math.max(2, 12, 16, 20, 19);})();
